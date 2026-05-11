@@ -1,0 +1,65 @@
+/* Longju 5.1 主题色板 */
+
+:root {
+  /* 背景色系 */
+  --color-bg-primary: #0F0F12;      /* 主背景 */
+  --color-bg-secondary: #1A1A1F;    /* 侧边栏、面板 */
+  --color-bg-tertiary: #25252B;     /* 悬浮卡片、输入框 */
+  --color-bg-elevated: #2D2D35;     /* 弹窗、下拉菜单 */
+  
+  /* 文本色系 */
+  --color-text-primary: #EDEDED;    /* 主要文本 */
+  --color-text-secondary: #A1A1AA;  /* 辅助文本、时间戳 */
+  --color-text-tertiary: #6E6E76;   /* 占位符、禁用态 */
+  --color-text-inverse: #0F0F12;    /* 反色文本 */
+  
+  /* 品牌色 */
+  --color-accent-primary: #6366F1;  /* 靛蓝色主色 */
+  --color-accent-secondary: #818CF8; /* 浅靛蓝 */
+  --color-accent-glow: rgba(99, 102, 241, 0.3); /* 发光效果 */
+  
+  /* 高亮色 - 青紫渐变 */
+  --color-highlight-cyan: #00FFC8;     /* 青色 */
+  --color-highlight-purple: #B04EFF;   /* 紫色 */
+  --color-gradient-cyan-purple: linear-gradient(135deg, #00FFC8 0%, #B04EFF 100%);
+  
+  /* 功能色 */
+  --color-success: #10B981;     /* 成功 */
+  --color-success-light: #34D399;
+  --color-warning: #F59E0B;     /* 警告 */
+  --color-warning-light: #FBBF24;
+  --color-error: #EF4444;       /* 错误 */
+  --color-error-light: #F87171;
+  --color-info: #3B82F6;        /* 信息 */
+  --color-info-light: #60A5FA;
+  
+  /* 边框色 */
+  --color-border-default: rgba(255, 255, 255, 0.08);
+  --color-border-hover: rgba(255, 255, 255, 0.15);
+  --color-border-active: rgba(99, 102, 241, 0.5);
+  
+  /* 透明度色值 */
+  --color-overlay-light: rgba(15, 15, 18, 0.5);
+  --color-overlay-medium: rgba(15, 15, 18, 0.7);
+  --color-overlay-heavy: rgba(15, 15, 18, 0.9);
+}
+
+/* 导出为CSS变量供Tailwind使用 */
+@theme {
+  --color-bg-primary: #0F0F12;
+  --color-bg-secondary: #1A1A1F;
+  --color-bg-tertiary: #25252B;
+  --color-bg-elevated: #2D2D35;
+  
+  --color-text-primary: #EDEDED;
+  --color-text-secondary: #A1A1AA;
+  --color-text-tertiary: #6E6E76;
+  
+  --color-accent-primary: #6366F1;
+  --color-highlight-cyan: #00FFC8;
+  --color-highlight-purple: #B04EFF;
+  
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+}

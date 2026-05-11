@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #0F0F12;
+    --bg-secondary: #1A1A1F;
+    --bg-tertiary: #25252B;
+    --text-primary: #EDEDED;
+    --text-secondary: #A1A1AA;
+    --accent-primary: #6366F1;
+    --accent-glow: rgba(99, 102, 241, 0.3);
+    --success: #10B981;
+    --warning: #F59E0B;
+    --error: #EF4444;
+    --highlight-cyan: #00FFC8;
+    --highlight-purple: #B04EFF;
+  }
+
+  body {
+    @apply bg-bg-primary text-text-primary font-sans;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  #root {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+@layer components {
+  .glass {
+    background: rgba(26, 26, 31, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .glass-strong {
+    background: rgba(37, 37, 43, 0.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .gradient-cyan-purple {
+    background: linear-gradient(135deg, #00FFC8 0%, #B04EFF 100%);
+  }
+
+  .text-gradient-cyan-purple {
+    background: linear-gradient(135deg, #00FFC8 0%, #B04EFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
